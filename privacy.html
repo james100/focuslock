@@ -2,35 +2,44 @@
 <title>집중잠금 개인정보처리방침</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap">
 <header><div class="mark">🔒</div><a href="./">집중잠금</a><nav><a href="support.html">지원</a><a href="privacy.html">개인정보처리방침</a></nav></header>
 <h1>개인정보처리방침</h1>
-<p class="lead">집중잠금(FocusLock)은 개인정보를 수집하지 않습니다. 짧게 말하면 그게 전부이고, 아래는 자세한 설명입니다.</p>
-<small>시행일: 2026년 10월 16일</small>
+<p class="lead">집중잠금(FocusLock)은 이름·이메일·전화번호 같은 개인정보를 받지 않고, 계정도 없습니다. 어떤 앱을 잠갔는지, 얼마나 집중했는지는 내 폰 안에만 저장됩니다. 다만 구독 처리와 결제 문제 확인을 위해 익명 정보 일부가 구독 관리 업체로 전송됩니다. 아래는 자세한 설명입니다.</p>
+<small>시행일: 2026년 11월 12일 (이전 시행일: 2026년 10월 16일)</small>
 
 <h2>1. 수집하는 정보</h2>
-<p>집중잠금은 이름, 이메일, 전화번호, 위치, 기기 식별자 등 어떠한 개인정보도 수집·전송·저장하지 않습니다. 계정이 없고, 앱이 통신하는 서버도 없습니다.</p>
+<p>집중잠금은 이름, 이메일, 전화번호, 위치, 연락처를 수집하지 않으며 계정이 없습니다. 개발자가 직접 운영하는 서버도 없습니다.</p>
+<p>다만 구독 관리와 결제 문제 확인을 위해 아래 정보가 구독 관리 업체 RevenueCat으로 전송됩니다 (6항 참고).</p>
+<ul>
+<li>앱 설치마다 무작위로 만들어지는 익명 사용자 ID와, 경우에 따라 앱 개발자 단위의 기기 식별자(IDFV) (이름·이메일·Apple 계정과 연결되지 않습니다)</li>
+<li>구입 내역: 구입한 상품, 구입·갱신·만료 시점, 무료 체험 여부</li>
+<li>요금제 화면 이용 횟수: 요금제 화면을 연 횟수, 결제 버튼을 누른 횟수, 결제 결과(성공·취소·오류), 무료 체험·예약 잠금 사용 여부</li>
+<li>기기·앱 기본 정보: iOS 버전, 앱 버전, 기기 종류, 국가·언어 설정</li>
+<li>Apple 검색 광고를 통해 설치했는지 여부 (Apple이 제공하는 광고 기여도 정보이며, 광고 식별자(IDFA)는 사용하지 않습니다)</li>
+</ul>
+<p>이 정보로 사용자가 누구인지 알 수 없으며, 광고나 다른 앱·웹사이트에 걸친 추적에 사용하지 않습니다.</p>
 
 <h2>2. 기기 안에만 저장되는 정보</h2>
 <p>다음 정보는 기능을 위해 사용자의 iPhone 안에만 저장되며, 개발자나 제3자에게 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.</p>
 <ul>
 <li>잠그기로 고른 앱·카테고리 (Apple 스크린 타임이 제공하는 불투명 토큰 형태이며, 앱 이름 자체는 집중잠금이 알 수 없습니다)</li>
-<li>잠금 시간, 잠금 방식, 날짜별 집중 시간 기록</li>
+<li>잠금 시간, 잠금 방식, 예약 잠금 일정, 날짜별 집중 시간 기록</li>
 <li>친구 열쇠에 쓰이는 열쇠 코드와 친구가 맡긴 열쇠</li>
-<li>PRO 구매 여부</li>
 </ul>
 
 <h2>3. 스크린 타임(Screen Time) 접근</h2>
-<p>앱 잠금 기능은 Apple의 FamilyControls·ManagedSettings 프레임워크를 사용합니다. 이를 위해 스크린 타임 접근 권한을 요청하며, 권한은 사용자가 고른 앱을 정한 시간 동안 가리는 데에만 사용됩니다. 집중잠금은 사용자의 앱 사용 시간이나 사용 내역을 읽지 않으며, 어떤 앱이 설치되어 있는지도 알 수 없습니다.</p>
+<p>앱 잠금 기능은 Apple의 FamilyControls·ManagedSettings·DeviceActivity 프레임워크를 사용합니다. 이를 위해 스크린 타임 접근 권한을 요청하며, 권한은 사용자가 고른 앱을 정한 시간(예약 잠금 포함) 동안 가리는 데에만 사용됩니다. 집중잠금은 사용자의 앱 사용 시간이나 사용 내역을 읽지 않으며, 어떤 앱이 설치되어 있는지도 알 수 없습니다.</p>
 
 <h2>4. 친구 열쇠와 메시지</h2>
 <p>친구 열쇠 기능은 열쇠 코드·요청 번호·해제 번호를 담은 짧은 텍스트를 사용자가 직접 고른 메시지 앱(문자, 카카오톡 등)으로 보내는 방식입니다. 집중잠금은 메시지를 직접 전송하지 않으며, 보낸 내용이나 상대방 정보를 받거나 저장하지 않습니다. 해제 번호는 양쪽 기기에서 각각 계산되고 서버를 거치지 않습니다.</p>
 
 <h2>5. 앱 내 구입</h2>
-<p>PRO 구독과 평생 이용권은 Apple의 App Store 결제 시스템을 통해 처리됩니다. 결제 정보는 Apple이 관리하며 집중잠금은 결제 수단이나 거래 상세에 접근하지 않습니다. 구매 여부 확인은 기기에서 Apple의 StoreKit을 통해 이루어집니다. Apple의 개인정보 처리는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보 처리방침</a>을 따릅니다.</p>
+<p>PRO 구독과 평생 이용권은 Apple의 App Store 결제 시스템을 통해 처리됩니다. 결제 정보는 Apple이 관리하며 집중잠금은 결제 수단이나 거래 상세에 접근하지 않습니다. 구매 여부 확인은 기기에서 Apple의 StoreKit을 통해 이루어지며, 구독 상태 관리를 위해 1항의 구입 내역이 RevenueCat으로 전송됩니다. Apple의 개인정보 처리는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보 처리방침</a>을 따릅니다.</p>
 
 <h2>6. 제3자 서비스</h2>
-<p>현재 버전은 분석 도구, 광고 SDK, 추적 기술을 포함하지 않습니다. 향후 앱 개선을 위해 익명화된 사용 통계 도구를 추가하게 되면 본 방침을 먼저 갱신하고 앱 업데이트 내용에 명시하겠습니다.</p>
+<p>집중잠금은 구독 관리를 위해 RevenueCat(RevenueCat, Inc.)의 SDK를 사용합니다. 1항에 적은 익명 정보가 RevenueCat으로 전송·보관되며, RevenueCat의 처리 방식은 <a href="https://www.revenuecat.com/privacy">RevenueCat 개인정보 처리방침</a>을 따릅니다. 버전 1.0.4(2026년 11월)부터는 결제 문제를 확인하기 위해 요금제 화면 이용 횟수도 같은 방식으로 익명 수집합니다.</p>
+<p>광고 SDK와 추적 기술은 포함하지 않으며, 어떤 앱을 잠갔는지와 집중 기록은 통계로도 수집하지 않습니다.</p>
 
 <h2>7. 아동의 개인정보</h2>
-<p>집중잠금은 어떠한 사용자로부터도 개인정보를 수집하지 않으므로, 만 14세 미만 아동의 개인정보 역시 수집하지 않습니다.</p>
+<p>집중잠금은 연령과 관계없이 1항의 익명 정보 외에는 수집하지 않으며, 만 14세 미만 아동임을 알 수 있는 정보를 받지 않습니다.</p>
 
 <h2>8. 변경</h2>
 <p>이 방침이 바뀌면 이 페이지의 시행일을 갱신하고, 중요한 변경은 앱 업데이트 노트에 함께 안내합니다.</p>
@@ -39,7 +48,8 @@
 <p>개인정보 관련 문의: <a href="mailto:limlimlimlim2026@gmail.com">limlimlimlim2026@gmail.com</a><br>개발자: 임성준 (Sungjun Lim)</p>
 
 <h2 id="en">Privacy Policy (English)</h2>
-<p>FocusLock does not collect, transmit, or store any personal data. There are no accounts and no servers. Your selected apps (as opaque Screen Time tokens), lock settings, focus history, friend-key codes and purchase status are stored only on your device and are deleted when you delete the app. Screen Time (FamilyControls / ManagedSettings) access is used solely to shield the apps you choose for the duration you choose; FocusLock cannot see your app usage or which apps are installed. Friend-key messages are sent by you through a messaging app of your choice; FocusLock never receives them. In-app purchases are processed by Apple. The current version contains no analytics, advertising or tracking SDKs. Contact: limlimlimlim2026@gmail.com</p>
+<p>Effective 12 November 2026. FocusLock has no accounts and does not collect your name, email, phone number, location or contacts. Your selected apps (as opaque Screen Time tokens), lock settings, schedules, focus history and friend-key codes are stored only on your device and are deleted when you delete the app. Screen Time (FamilyControls / ManagedSettings / DeviceActivity) access is used solely to shield the apps you choose for the duration or schedule you choose; FocusLock cannot see your app usage or which apps are installed. Friend-key messages are sent by you through a messaging app of your choice; FocusLock never receives them.</p>
+<p>In-app purchases are processed by Apple. To manage subscriptions and diagnose purchase problems, the app uses the RevenueCat SDK, which receives: a random anonymous app user ID (and possibly the vendor device identifier, IDFV), purchase history (product, purchase/renewal/expiry dates, trial status), paywall usage counters (paywall opened, purchase button tapped, purchase result, use of the free trial and scheduled lock), basic device and app information (iOS version, app version, device type, country/language), and Apple Search Ads attribution (whether the install came from an Apple search ad; no IDFA). This information does not identify you and is not used for advertising or tracking across other apps or websites. The app contains no advertising or tracking SDKs. See the <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>. Contact: limlimlimlim2026@gmail.com</p>
 
 <footer>© 2026 Sungjun Lim · <a href="./">홈</a> · <a href="support.html">지원</a></footer>
 </div></body></html>
